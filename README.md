@@ -366,7 +366,14 @@ You can run EXAONE Deep models on your device with LM-Studio.
 
 2. Download EXAONE Deep model in GGUF format. You can search and find proper model at `Model Search`.
 
-3. Configure the prompt setting. We found our chat template in Jinja format does not work properly in LM-Studio, so we recommend using custom prompt setting as below.
+3. Configure the prompt setting. 
+    - Set **"Reasoning Section Parsing"** as `<thought>` and `</thought>`
+    - Set **"Template (Jinja)"** as that of EXAONE 3.5.
+        ```
+        {% for message in messages %}{% if loop.first and message['role'] != 'system' %}{{ '[|system|][|endofturn|]\n' }}{% endif %}{{ '[|' + message['role'] + '|]' + message['content'] }}{% if message['role'] == 'user' %}{{ '\n' }}{% else %}{{ '[|endofturn|]\n' }}{% endif %}{% endfor %}{% if add_generation_prompt %}{{ '[|assistant|]' }}{% endif %}
+        ```
+
+Or, you can use custom prompt as below.
 <p>
 <img src="assets/lmstudio_prompt.png", width="60%", style="margin: 20 auto;">
 
