@@ -362,7 +362,7 @@ ollama run exaone
 
 You can run EXAONE Deep models on your device with LM-Studio.
 
-1. Install LM-Studio. Please refer to the [LM-Studio Page](https://lmstudio.ai/) for mode details.
+1. Install LM-Studio. Please refer to the [LM-Studio Page](https://lmstudio.ai/) for more details.
 
 2. Download EXAONE Deep model in GGUF format. You can search and find proper model at `Model Search`.
 
