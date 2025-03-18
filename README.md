@@ -3,7 +3,7 @@
 <p align="center">
 <img src="assets/EXAONE_Symbol+BI_3d.png", width="400", style="margin: 40 auto;">
 <br>
-<p align="center"> 🤗 <a href="https://huggingface.co/collections/LGAI-EXAONE/exaone-deep-67d119918816ec6efa79a4aa">Hugging Face</a> &nbsp | &nbsp 📝 <a href="https://www.lgresearch.ai/news/view?seq=543"> Blog</a> &nbsp | &nbsp 📑 <a href="https://lgresearch.ai/data/upload/EXAONE_Deep__Model_Card.pdf"> Documentation </a>
+<p align="center"> 🤗 <a href="https://huggingface.co/collections/LGAI-EXAONE/exaone-deep-67d119918816ec6efa79a4aa">Hugging Face</a> &nbsp | &nbsp 📝 <a href="https://www.lgresearch.ai/news/view?seq=543"> Blog</a> &nbsp | &nbsp 📑 <a href="https://arxiv.org/abs/2503.12524"> Documentation </a>
 <br>
 
 <br>
@@ -30,13 +30,13 @@ Our documentation consists of the following sections:
 
 ## News
 
-- 2025.03.18: We release the EXAONE Deep, reasoning enhanced language models, including 2.4B, 7.8B, and 32B. Check out the 📑 [Documentation](https://lgresearch.ai/data/upload/EXAONE_Deep__Model_Card.pdf)!
+- 2025.03.18: We release the EXAONE Deep, reasoning enhanced language models, including 2.4B, 7.8B, and 32B. Check out the 📑 [Documentation](https://arxiv.org/abs/2503.12524)!
 
 <br>
 
 ## Performance
 
-Some experimental results are shown below. The full evaluation results can be found in the [Documentation](https://lgresearch.ai/data/upload/EXAONE_Deep__Model_Card.pdf).
+Some experimental results are shown below. The full evaluation results can be found in the [Documentation](https://arxiv.org/abs/2503.12524).
 
 <br>
 
@@ -484,7 +484,14 @@ The model is licensed under [EXAONE AI Model License Agreement 1.1 - NC](./LICEN
  
 ## Citation
  
-TBU
+```
+@article{exaone-deep,
+  title={EXAONE Deep: Reasoning Enhanced Language Models},
+  author={{LG AI Research}},
+  journal={arXiv preprint arXiv:2503.12524},
+  year={2025}
+}
+```
 
 <br>
 
