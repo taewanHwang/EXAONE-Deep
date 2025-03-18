@@ -358,6 +358,18 @@ ollama create exaone -f Modelfile
 ollama run exaone
 ```
 
+### LM-Studio
+
+You can run EXAONE Deep models on your device with LM-Studio.
+
+1. Install LM-Studio. Please refer to the [LM-Studio Page](https://lmstudio.ai/) for mode details.
+
+2. Download EXAONE Deep model in GGUF format. You can search and find proper model at `Model Search`.
+
+3. Configure the prompt setting. We found our chat template in Jinja format does not work properly in LM-Studio, so we recommend using custom prompt setting as below.
+<p>
+<img src="assets/lmstudio_prompt.png", width="60%", style="margin: 20 auto;">
+
 ## Deployment
 
 EXAONE Deep models have been integrated into various deployment frameworks. 
