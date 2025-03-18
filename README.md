@@ -473,7 +473,9 @@ To achieve the expected performance, we recommend using the following configurat
 1. Ensure the model starts with `<thought>\n` for reasoning steps. The model's output quality may be degraded when you omit it. You can easily apply this feature by using `tokenizer.apply_chat_template()` with `add_generation_prompt=True`. Please check the example code on [Quickstart](#quickstart) section.
 2. The reasoning steps of EXAONE Deep models enclosed by `<thought>\n...\n</thought>` usually have lots of tokens, so previous reasoning steps may be necessary to be removed in multi-turn situation. The provided tokenizer handles this automatically.
 3. Avoid using system prompt, and build the instruction on the user prompt. 
-4. When it comes to math problems, include **"Please reason step by step, and put your final answer within \boxed{}."** in your prompt. 
+4. Additional instructions help the models reason more deeply, so that the models generate better output.
+    - For math problems, the instructions **"Please reason step by step, and put your final answer within \boxed{}."** are helpful.
+    - For more information on our evaluation setting including prompts, please refer to our [Documentation](https://arxiv.org/abs/2503.12524).
 5. In our evaluation, we use `temperature=0.6` and `top_p=0.95` for generation. 
 6. When evaluating the models, it is recommended to test multiple times to assess the expected performance accurately.
 
