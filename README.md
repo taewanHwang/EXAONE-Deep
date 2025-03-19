@@ -71,7 +71,7 @@ Some experimental results are shown below. The full evaluation results can be fo
     <tr>
         <td>QwQ-32B</td>
         <td>95.5</td>
-        <td><strong>79.5</strong> / 86.7</td>
+        <td>79.5 / 86.7</td>
         <td><strong>67.1</strong> / 76.7</td>
         <td>94.4</td>
         <td>63.3</td>
@@ -89,7 +89,7 @@ Some experimental results are shown below. The full evaluation results can be fo
     <tr>
         <td>DeepSeek-R1 (671B)</td>
         <td><strong>97.3</strong></td>
-        <td>79.8 / 86.7</td>
+        <td><strong>79.8</strong> / 86.7</td>
         <td>66.8 / <strong>80.0</strong></td>
         <td>89.9</td>
         <td><strong>71.5</strong></td>
