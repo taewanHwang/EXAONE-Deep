@@ -327,7 +327,20 @@ llama-cli -m ./EXAONE-Deep-7.8B-BF16.gguf \
 
 ### Ollama
 
-You can create and run EXAONE Deep models with GGUF format for customizing.
+EXAONE Deep models are uploaded to Ollama model library. You can easily use EXAONE models as follows:
+
+1. Install Ollama. Please refer to the [Ollama repository](https://github.com/ollama/ollama) for more details.
+
+2. Run EXAONE Deep model as follows:
+```bash
+ollama run exaone-deep:7.8b
+```
+
+> [!Note]
+> In above example, the model `exaone-deep:7.8b` is quantized in `Q4_K_M`. If you would like to know a list of available models, 
+> please refer to the [EXAONE Deep Ollama page](https://ollama.com/library/exaone-deep) for more details.
+
+Or, you can create and run EXAONE Deep models with GGUF format for customizing.
 
 1. Install Ollama. Please refer to the [Ollama repository](https://github.com/ollama/ollama) for more details.
 
